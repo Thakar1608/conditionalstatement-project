@@ -3,11 +3,11 @@ let keepOrdering = true;
 
 while (keepOrdering) {
   console.log("------- MENU -------");
-  console.log("1. panjabi dish - ₹180");
-  console.log("2. pani puri - ₹30");
-  console.log("3. dhokla - ₹60");
-  console.log("4. pizza - ₹120");
-  console.log("5. manchurian - ₹50");
+  console.log("1. panjabi dish - 180");
+  console.log("2. pani puri - 30");
+  console.log("3. dhokla - 60");
+  console.log("4. pizza - 120");
+  console.log("5. manchurian - 50");
 
   let userChoice = prompt("Enter item number (1 to 5):");
   let name = "";
@@ -38,7 +38,7 @@ while (keepOrdering) {
   bill = bill + total;
 
   console.log(`You ordered ${count} ${name}. Cost: ₹${total}`);
-  console.log("Current total bill: ₹" + bill);
+  console.log("Current total bill: " , bill);
 
   let more = prompt("Do you want to order more? (yes/no)");
   if (more !== "yes") {
@@ -48,4 +48,4 @@ while (keepOrdering) {
 
 console.log("--------------------");
 console.log("Thank you for ordering!");
-console.log("Your final bill is ₹" + bill);
+console.log("Your final bill is " , bill);
